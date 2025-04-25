@@ -1,0 +1,5 @@
+Página web: https://r8ysk7-5000.csb.app/
+
+Sistema de realidad aumentada: https://kaki309.8thwall.app/asm-2do-corte-sistema-ra-biomedica/
+
+Para recrear el sistema de realidad aumentada, cree un nuevo proyecto en la plataforma 8th Wall, arrastre el modelo 3D a la escena e introdúzcale el script llamado "Draggable.ts" disponible en este repositorio. Con esto la funcionalidad está terminada.

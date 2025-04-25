@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Visor de equipo de laboratorio en RA</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700&family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      html, body {
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+      }
+
+      body {
+        margin: 0;
+        font-family: "Roboto", sans-serif;
+        background-color: #f9fafb;
+        color: #2d2d2d;
+        flex: 1;
+      }
+
+      p {
+        font-size: 1.5rem;
+      }
+
+      li {
+        font-size: 1.5rem;
+      }
+
+      header {
+        background-color: #1f4e79;
+        padding: 20px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        color: white;
+      }
+
+      header img {
+        height: 50px;
+      }
+
+      header h1 {
+        font-family: "Montserrat", sans-serif;
+        font-size: 1.5rem;
+        margin-left: 15px; 
+        text-align: center;
+        width: 110%;
+      }
+
+      .container {
+        max-width: 1000px;
+        margin: auto;
+        padding: 40px 20px;
+      }
+
+      h2 {
+        color: #1f4e79;
+        font-family: "Montserrat", sans-serif;
+      }
+
+      .visor {
+        border: 2px dashed #a8d5ba;
+        background-color: #fff;
+        padding: 40px;
+        text-align: center;
+        margin-top: 20px;
+        border-radius: 12px;
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+      }
+
+      footer {
+        text-align: center;
+        padding: 20px;
+        background-color: #f1f1f1;
+        color: #888;
+        font-size: 0.9rem;
+        margin-top: auto;
+      }
+
+      @media (max-width: 768px) {
+        header h1 {
+          font-size: 1.2rem;
+        }
+      }
+    </style>
+
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        const esMovil = /Mobi|Android|iPhone|iPad|iPod/i.test(navigator.userAgent);
+        const visor = document.querySelector(".visor-ra");
+
+        if (visor && !esMovil) {
+          visor.remove(); // Elimina completamente el bloque en computadoras
+        }
+      });
+    </script>
+  </head>
+
+  <body>
+    <header>
+      <div style="display: flex; align-items: center; justify-content: center; width: 100%;">
+        <img src="/img/Logo1.png" />
+        <h1>Visor de equipo de laboratorio en RA</h1>
+      </div>
+    </header>
+
+    <div class="container">
+      <h2>¿Qué es una incubadora?</h2>
+      <p>
+        Una incubadora es un equipo biomédico diseñado para proporcionar un
+        entorno controlado y estable a recién nacidos, especialmente a aquellos
+        que nacen prematuramente o tienen condiciones médicas especiales. Regula
+        temperatura, humedad, oxígeno y luz para favorecer el desarrollo del
+        bebé.
+      </p>
+      <div style="text-align: center">
+        <img
+          src="/img/Incubadora.png"
+          style="
+            max-width: 55%;
+            height: auto;
+            border-radius: 10px;
+            display: inline-block;
+          "
+        />
+      </div>
+
+      <div class="container">
+        <h2>Bases de funcionamiento</h2>
+        <p>
+          <ul>
+            <li>
+              Compartimento encerrado por una cubierta de plástico
+              transparente.
+            </li>
+            <li>
+              Ventilador y calentador debajo del colchón proporcionan
+              circulación de aire caliente.
+            </li>
+            <li>
+              Dos controles de temperatura: la temperatura en piel y en aire.
+            </li>
+            <li>
+              Fácil acceso con puertos para minimizar las fluctuaciones de
+              temperatura.
+            </li>
+            <li>Elevador de colchón ajustable y mecanismo de inclinación.</li>
+            <li>Alarmas de temperatura, oxígeno, humedad, etc.</li>
+            <li>Fácil de limpiar y desinfectar.</li>
+          </ul>
+        </p>
+        <div style="text-align: center">
+          <img
+            src="/img/Incubadora2.png"
+            style="
+              max-width: 70%;
+              height: auto;
+              border-radius: 10px;
+              display: inline-block;
+            "
+          />
+        </div>
+
+        <div class="container">
+          <h2>Sistemas internos</h2>
+          <p>
+            <ol>
+              <li>
+                Sistema de calefacción: Mantiene una temperatura constante y controlada para el bebé.
+              </li>
+              <li>
+                Sistema de humidificación: Controla la humedad para evitar que el bebé pierda líquidos o sufra daños en la piel.
+              </li>
+              <li>
+                Ventilación y flujo de aire: Asegura un ambiente limpio, con filtros para mantener el aire estéril.
+              </li>
+              <li>
+                Sensores: Detectan temperatura, humedad, y condiciones internas. Algunos también miden signos vitales del bebé.
+              </li>
+              <li>
+                Alarma: Se activa si hay alguna irregularidad (temperatura fuera de rango, falla en el sistema, etc.)
+              </li>
+              <li>
+                Iluminación interior: Luz suave para observación, y en algunos casos, luz especial para tratamiento (como fototerapia).
+              </li>
+            </ol>
+          </p>
+          <div style="text-align: center">
+            <img
+              src="img/Incubadora3.png"
+              style="
+                max-width: 70%;
+                height: auto;
+                border-radius: 10px;
+                display: inline-block;
+              "
+            />
+          </div>
+
+          <div class="visor visor-ra">
+            <p>
+              <a href="https://kaki309.8thwall.app/asm-2do-corte-sistema-ra-biomedica/" target="_blank" style="color: #1f4e79; font-weight: bold; text-decoration: none;">
+                Aprende mejor con nuestra experiencia de realidad aumentada haciendo
+                <u>Click aquí</u>
+              </a>
+            </p>
+          </div>
+
+          <div class="sketchfab-embed-wrapper" style="display: flex; justify-content: center; margin-top: 20px;">
+            <iframe 
+              title="Incubadora" 
+              frameborder="0" 
+              allowfullscreen 
+              mozallowfullscreen="true" 
+              webkitallowfullscreen="true" 
+              allow="autoplay; fullscreen; xr-spatial-tracking" 
+              xr-spatial-tracking 
+              execution-while-out-of-viewport 
+              execution-while-not-rendered 
+              web-share 
+              src="https://sketchfab.com/models/eee5ee738cca4c18b525fa6d37471fc7/embed?autostart=1"
+              style="width: 100%; max-width: 900px; height: 600px; border-radius: 12px; box-shadow: 0 4px 12px rgba(0,0,0,0.2);">
+            </iframe>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <footer>
+      Proyecto académico - Ingenierías - Universidad Autónoma de Occidente
+    </footer>
+  </body>
+</html>
